@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826252531209",
+    "project_id": "projectpdi-f0814",
+    "storage_bucket": "projectpdi-f0814.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826252531209:android:4e37055882af9905708ad8",
+        "android_client_info": {
+          "package_name": "com.example.project_place2study"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826252531209-2r5e1cqts26sou2670gfj17s0un248nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArFfhjABc31JfBDgsixPYr8aRJrhsxlAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826252531209-2r5e1cqts26sou2670gfj17s0un248nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
