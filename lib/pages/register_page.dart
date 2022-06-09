@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:project_place2study/pages/login_page.dart';
 import 'package:project_place2study/pages/home_page.dart';
 
+
 class RegisterPage extends StatefulWidget {
   final VoidCallback showLoginPage;
   const RegisterPage({
@@ -189,25 +190,32 @@ class _RegisterPageState extends State<RegisterPage> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           GestureDetector(
-                            onTap: widget.showLoginPage,
+                            onTap: () {
+                              Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                                  return LoginPage(showRegisterPage: () {  },);
+                                },
+                                ),
+                              );
+                            },
                             child: Text(
-                               ' Login now',
-                               style: TextStyle(
+                              ' Login now',
+                              style: TextStyle(
                                 color: Colors.blue,
-                               fontWeight: FontWeight.bold,
-                        ),
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ],
+        ),
       ),
-    ),
-    ),
-    ),
     );
   }
 }

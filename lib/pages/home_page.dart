@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:project_place2study/second%20pages/bibliotecaiscac.dart';
 import 'package:project_place2study/second%20pages/bibliotecamunicipalcoimbra.dart';
 import 'package:project_place2study/second%20pages/bibliotecauc.dart';
@@ -53,12 +54,12 @@ class _HomePageState extends State<HomePage> {
                   },
 
                   child: Container(
-                    height: 130,
+                    height: 100,
                     color: Colors.deepPurple[300],
                     child: Column(
                       children: [
                         Text('Biblioteca ISCAC',
-                          style: TextStyle(
+                          style: GoogleFonts.bebasNeue(
                             color: Colors.white,
                             fontSize: 24,
                             fontWeight: FontWeight.w500,
@@ -66,10 +67,18 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('50/50',
+                        Text('Horário: 9h às 22h',
                           style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 24,
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+
+                        Text('+ info',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -95,12 +104,12 @@ class _HomePageState extends State<HomePage> {
                   },
 
                   child: Container(
-                    height: 130,
+                    height: 100,
                     color: Colors.deepPurple[300],
                     child: Column(
                       children: [
                         Text('Biblioteca Municipal de Coimbra',
-                          style: TextStyle(
+                          style: GoogleFonts.bebasNeue(
                             color: Colors.white,
                             fontSize: 24,
                             fontWeight: FontWeight.w500,
@@ -108,10 +117,18 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('50/50',
+                        Text('Horário: 10h às 19h30',
                           style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 24,
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+
+                        Text('+ info',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -137,12 +154,12 @@ class _HomePageState extends State<HomePage> {
                   },
 
                   child: Container(
-                    height: 130,
+                    height: 100,
                     color: Colors.deepPurple[300],
                     child: Column(
                       children: [
                         Text('Biblioteca UC',
-                          style: TextStyle(
+                          style: GoogleFonts.bebasNeue(
                             color: Colors.white,
                             fontSize: 24,
                             fontWeight: FontWeight.w500,
@@ -150,10 +167,18 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('50/50',
+                        Text('Horário: 9h às 22h',
                           style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 24,
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+
+                        Text('+ info',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -179,23 +204,31 @@ class _HomePageState extends State<HomePage> {
                   },
 
                   child: Container(
-                    height: 130,
+                    height: 100,
                     color: Colors.deepPurple[300],
                     child: Column(
                       children: [
                         Text('Tagv',
-                          style: TextStyle(
+                          style: GoogleFonts.bebasNeue(
                             color: Colors.white,
                             fontSize: 24,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
 
-
-                        Text('50/50',
+                        Text('Horário: 10h às 20h',
                           style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 24,
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+
+
+                        Text('+ info',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
