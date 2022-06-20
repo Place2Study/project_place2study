@@ -10,7 +10,6 @@ class BibliotecaISCAC extends StatefulWidget {
 
 class _BibliotecaISCACState extends State<BibliotecaISCAC> {
 
-  // teste
 
   int _pessoas=0;
   String _situacao="Há Vagas";
