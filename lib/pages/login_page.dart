@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  
+
   static Future<User?> loginUsingEmailPassword(
       {required String email,
       required String password,
