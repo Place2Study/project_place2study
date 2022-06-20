@@ -9,6 +9,21 @@ class BibliotecaUC extends StatefulWidget {
 }
 
 class _BibliotecaUCState extends State<BibliotecaUC> {
+
+  int _pessoas=0;
+  String _situacao="Há Vagas";
+
+  void _mudapessoas(int valor){
+    setState(() {
+      _pessoas+=valor;
+      if (_pessoas>5){
+        _situacao= "Sala Lotada";
+      }else{
+        _situacao="Há Vagas";
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,6 +74,63 @@ class _BibliotecaUCState extends State<BibliotecaUC> {
               ),
             ),
           ),
+
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.deepPurple[300],
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Situação: $_situacao", style: TextStyle(fontSize: 25),),
+                      SizedBox(height: 20,),
+                      Text("Quantidade de Pessoas: $_pessoas" ,
+                        style: TextStyle(fontSize:22),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          RaisedButton(
+                            child: Text('Entrar',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                            onPressed:(){
+                              _mudapessoas(1);
+                            },
+                            color: Colors.deepPurple[100],
+                          ),
+
+                          RaisedButton(
+                            child: Text('Sair',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                            onPressed:(){
+                              _mudapessoas(-1);
+                            },
+                            color: Colors.deepPurple[100],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
