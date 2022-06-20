@@ -59,21 +59,77 @@ class _TagvState extends State<Tagv> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Container(
-                  height: 650,
+                  height: 250,
                   color: Colors.deepPurple[300],
-                  child: Text('Teatro Académico Gil Vicente (TAGV)',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.w500,
-                    ),
+                  child: Column(
+                    children: [
+                      Text('Praça da Républica | 3000-343',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                          height: 2.5,
+                        ),
+                      ),
+                      Text('239 052 563',
+                        textAlign: TextAlign.right,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                          height: 1.5,
+                        ),
+                      ),
 
-                    textAlign: TextAlign.center,
+                      Text('Horário:',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          height: 3,
+                        ),
+                      ),
+                      Text('De Segunda a Sexta :',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
+                      ),
+                      Text('-> Das 14h à 00h',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
+                      ),
+
+                      Text('Lotação :',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          height: 3,
+                        ),
+                      ),
+                      Text('Lotação Máxima - 70 pessoas',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          height: 1,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
             ),
           ),
+
+
 
           SliverToBoxAdapter(
             child: Padding(
@@ -88,10 +144,10 @@ class _TagvState extends State<Tagv> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Text("Situação: $_situacao", style: TextStyle(fontSize: 25),),
+                      Text("Situação: $_situacao", style: TextStyle(fontSize: 25, color: Colors.white),),
                       SizedBox(height: 20,),
                       Text("Quantidade de Pessoas: $_pessoas" ,
-                        style: TextStyle(fontSize:22),
+                        style: TextStyle(fontSize:22, color: Colors.white,),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -132,7 +188,8 @@ class _TagvState extends State<Tagv> {
             ),
           )
         ],
-      ),
+      )
     );
+
   }
 }
