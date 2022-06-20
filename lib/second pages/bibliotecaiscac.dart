@@ -10,6 +10,23 @@ class BibliotecaISCAC extends StatefulWidget {
 
 class _BibliotecaISCACState extends State<BibliotecaISCAC> {
 
+  // teste
+
+  int _pessoas=0;
+  String _situacao="Há Vagas";
+
+  void _mudapessoas(int valor){
+    setState(() {
+      _pessoas+=valor;
+      if (_pessoas>5){
+        _situacao= "Sala Lotada";
+      }else{
+        _situacao="Há Vagas";
+      }
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
