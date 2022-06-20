@@ -77,8 +77,66 @@ class _BibliotecaISCACState extends State<BibliotecaISCAC> {
               ),
             ),
           ),
-        ],
+
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.deepPurple[300],
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                  Text("Situação: $_situacao", style: TextStyle(fontSize: 25),),
+                  SizedBox(height: 20,),
+                  Text("Quantidade de Pessoas: $_pessoas" ,
+                    style: TextStyle(fontSize:22),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                  RaisedButton(
+                  child: Text('Entrar',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                    ),
+                  ),
+                  onPressed:(){
+                    _mudapessoas(1);
+                  },
+                  color: Colors.deepPurple[100],
+                ),
+
+                RaisedButton(
+                  child: Text('Sair',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                    ),
+                  ),
+                  onPressed:(){
+                    _mudapessoas(-1);
+                  },
+                  color: Colors.deepPurple[100],
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
+    ),
+    ),
+      )
+    ],
+    )
     );
+
   }
 }
