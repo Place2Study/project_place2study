@@ -58,7 +58,7 @@ class _BibliotecaMunicipalCoimbraState extends State<BibliotecaMunicipalCoimbra>
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Container(
-                  height: 250,
+                  height: 300,
                   color: Colors.deepPurple[300],
                   child: Column(
                     children: [
