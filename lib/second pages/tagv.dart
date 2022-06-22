@@ -16,10 +16,14 @@ class _TagvState extends State<Tagv> {
   void _mudapessoas(int valor){
     setState(() {
       _pessoas+=valor;
-      if (_pessoas>5){
+      if (_pessoas==5){
         _situacao= "Sala Lotada";
+
+
+      }else if(_pessoas >= 0){
+        _situacao = "Há vagas";
       }else{
-        _situacao="Há Vagas";
+        _pessoas = 0;
       }
     });
   }
@@ -38,7 +42,7 @@ class _TagvState extends State<Tagv> {
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F2ff59976-956d-4950-8532-66ce1b69dfc9%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220620%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220620T140151Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D75ce73302ef33eebf8c697ce913c2a67cdd3b48d45d9f9b149914ba6d71108cc&sign=LfNzDD_sniXkydReWTeN59HbFzR8-RkJ0c6N-G5_cDs',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F9bff72e7-9ed5-4540-adf8-9ce4d0401197%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220622%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220622T165717Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D8cadc324f172eb49502053e6f7a4d4751de5ca80bde0d11a254db1cec4febc55&sign=LgTEXJhIqcHDZxpWMmLKuvwzTj1wcf6joQLf4b9wl38',
                 fit: BoxFit.cover,
               ),
               title: Text('TAGV'),
