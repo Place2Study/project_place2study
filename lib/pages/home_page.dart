@@ -203,7 +203,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
 
-                        Text('Horário: 10h às 20h',
+                        Text('Horário: 14h às 00h',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -291,7 +291,7 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('Horário: 09h00 às 17h30',
+                        Text('Horário: 14h às 00h',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
