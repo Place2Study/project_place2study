@@ -14,17 +14,21 @@ class _BibliotecaISCACState extends State<BibliotecaISCAC> {
 
 
   int _pessoas=0;
+
   String _situacao="Há Vagas";
 
   void _mudapessoas(int valor){
     setState(() {
       _pessoas+=valor;
-      if (_pessoas==5){
+      if (_pessoas>40){
         _situacao= "Sala Lotada";
+        setState(() {
+          _pessoas--;
+        });
 
 
       }else if(_pessoas >= 0){
-        _situacao = "Há vagas";
+        _situacao = "Há Vagas";
       }else{
         _pessoas = 0;
       }
@@ -45,7 +49,7 @@ class _BibliotecaISCACState extends State<BibliotecaISCAC> {
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
             background: Image.network(
-              'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F8747b6e9-7798-4b18-9745-c4930ac9a297%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220622%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220622T165146Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D5dea0f072966b0224e1c4854390d9ba070cb4e4afe0c40f9861ed9f09854f67d&sign=EIaImOX5Uq-3HbMvxeswr0SuiH6K8tIy7rubBZ7yMJk',
+              'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F7265f3a5-0d22-4ed5-967e-ee7b53d4a775%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220624%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220624T144124Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dd1ca119ac7dad79c0c64f8574bb47d1620a983bcfc3b5bfb8fd1119453c7d8ef&sign=nWOxx9DNorv_Tlpur2gVvqyrGLnb9RW90D19R9YclO0',
               fit: BoxFit.cover,
             ),
             title: Text('Biblioteca ISCAC'),
@@ -121,7 +125,7 @@ class _BibliotecaISCACState extends State<BibliotecaISCAC> {
                           height: 3,
                         ),
                       ),
-                      Text('Lotação Máxima - 6 pessoas',
+                      Text('Lotação Máxima - 40 pessoas',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16,

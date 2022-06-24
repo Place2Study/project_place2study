@@ -11,17 +11,21 @@ class BibliotecaFEUC extends StatefulWidget {
 class _BibliotecaFEUCState extends State<BibliotecaFEUC> {
 
   int _pessoas=0;
+
   String _situacao="Há Vagas";
 
   void _mudapessoas(int valor){
     setState(() {
       _pessoas+=valor;
-      if (_pessoas==5){
+      if (_pessoas>50){
         _situacao= "Sala Lotada";
+        setState(() {
+          _pessoas--;
+        });
 
 
       }else if(_pessoas >= 0){
-        _situacao = "Há vagas";
+        _situacao = "Há Vagas";
       }else{
         _pessoas = 0;
       }
@@ -42,7 +46,7 @@ class _BibliotecaFEUCState extends State<BibliotecaFEUC> {
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F3c60e53b-7f82-491a-b2f3-fd2a1a991070%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220622%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220622T165752Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dae6da4d8533ca1f1893e9f08f402de531c8d4b90c3b70505a2f788eee3ade80b&sign=zZPrGbBfg3QJS6DvQJ1JIaryjvqtGBXKugk8Zi5eDZE',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fa08e3875-84fa-4822-bf77-4a1899ded42d%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220624%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220624T144134Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Ddbc4ada7caa42aa9fa223c19c0a15ae560c2fbc48dcf8f66cc0aa1e127e3d6fc&sign=M9oV3f45FXf4SlZtESS98Cl-_NN-_jIi-BxkwQejfXk',
                 fit: BoxFit.cover,
               ),
               title: Text('Biblioteca FEUC'),

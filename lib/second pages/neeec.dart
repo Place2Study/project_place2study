@@ -11,17 +11,21 @@ class Neeec extends StatefulWidget {
 class _NeeecState extends State<Neeec> {
 
   int _pessoas=0;
+
   String _situacao="Há Vagas";
 
   void _mudapessoas(int valor){
     setState(() {
       _pessoas+=valor;
-      if (_pessoas==5){
+      if (_pessoas>46){
         _situacao= "Sala Lotada";
+        setState(() {
+          _pessoas--;
+        });
 
 
       }else if(_pessoas >= 0){
-        _situacao = "Há vagas";
+        _situacao = "Há Vagas";
       }else{
         _pessoas = 0;
       }
@@ -42,7 +46,7 @@ class _NeeecState extends State<Neeec> {
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F7bdc9bb9-df08-4710-883a-1504eb00d196%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220622%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220622T165825Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Daea4e3f21904dac795f78971c429a703bc8451aecdc239343a41bc099f1abadf&sign=VWX1Xm8VSrYLVkSRePnPyD8yHae_Ad9TGQwITyz7-sY',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F96ccd690-f640-42e2-bdb4-e4447b826220%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220624%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220624T144103Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D4e66107437eda28c6ca96fcb23741b186d16a639cd7b6e88c0d47d58ae6cf01b&sign=Dr_ZuNC3fgI0iqT71R3-XZt5tdnGAM4nDVwxnz526Ss',
                 fit: BoxFit.cover,
               ),
               title: Text('NEEEC'),

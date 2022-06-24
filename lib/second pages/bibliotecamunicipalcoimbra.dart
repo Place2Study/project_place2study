@@ -10,17 +10,21 @@ class BibliotecaMunicipalCoimbra extends StatefulWidget {
 class _BibliotecaMunicipalCoimbraState extends State<BibliotecaMunicipalCoimbra> {
 
   int _pessoas=0;
+
   String _situacao="Há Vagas";
 
   void _mudapessoas(int valor){
     setState(() {
       _pessoas+=valor;
-      if (_pessoas==5){
+      if (_pessoas>100){
         _situacao= "Sala Lotada";
+        setState(() {
+          _pessoas--;
+        });
 
 
       }else if(_pessoas >= 0){
-        _situacao = "Há vagas";
+        _situacao = "Há Vagas";
       }else{
         _pessoas = 0;
       }
@@ -41,7 +45,7 @@ class _BibliotecaMunicipalCoimbraState extends State<BibliotecaMunicipalCoimbra>
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F9cf3372f-a7f1-433e-b226-d3a92132ee67%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220622%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220622T165618Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D36aa52af5f4ae9e0a0e9ae4f1a470ed95e89d18cba4e649bd42dc8cb949e5480&sign=XrmQBamWa57dtrXIMmEep5GQF5RJJ1tj5mKZJjGM71U',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F33515763-266b-4f38-99ae-479b84afec68%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220624%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220624T144115Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D69d472cdd3af373f139a486dc3541d2d93e61163998b2acc95a2537b9b8649f4&sign=y6nixiU-lXaP47TF-X46GRUMNwJ-0Z4L5Nlppobc-yo',
                 fit: BoxFit.cover,
               ),
               title: Text('Biblioteca Municipal de Coimbra'),
