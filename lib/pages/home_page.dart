@@ -1,9 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:project_place2study/second%20pages/bibliotecadem.dart';
 import 'package:project_place2study/second%20pages/bibliotecaiscac.dart';
 import 'package:project_place2study/second%20pages/bibliotecamunicipalcoimbra.dart';
 import 'package:project_place2study/second%20pages/bibliotecauc.dart';
+import 'package:project_place2study/second%20pages/justicaepaz.dart';
+import 'package:project_place2study/second%20pages/saladeestudodcv.dart';
 import 'package:project_place2study/second%20pages/tagv.dart';
 import 'package:project_place2study/second%20pages/neeec.dart';
 import 'package:project_place2study/second%20pages/bibliotecafeuc.dart';
@@ -35,7 +38,7 @@ class _HomePageState extends State<HomePage> {
             automaticallyImplyLeading: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F9f162647-590b-410c-b4e5-d9d59f40d61e%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220624%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220624T145533Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D499c3a7cc17a8a069df4808aba64f3d5e4686ff6dffb23c24067737dcdb80bc0&sign=VW9eRHT5W_g5b3zuZRGW0PDI5ljgIotueVFFtBO2Ckg',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F16414a0c-9555-4fcc-bf06-7e203239a519%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220625%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220625T113448Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dfd527fe46fc8c8202ab9caf1c7bdc1757bd77136e12434bd386aa67d2681a247&sign=gvstn7KRlQPqPcOhcg_laLrSMTBXr0EBq2Ns3Siak40',
                 fit: BoxFit.cover,
               ),
             ),
@@ -316,7 +319,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => BibliotecaMunicipalCoimbra()),
+                      MaterialPageRoute(builder: (context) => SaladeEstudoDCV()),
                     );
                   },
 
@@ -334,7 +337,7 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('Horário: 08h00 às 19h00',
+                        Text('Horário: 09h às 17h30',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -360,7 +363,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => BibliotecaMunicipalCoimbra()),
+                      MaterialPageRoute(builder: (context) => JusticaePAZ()),
                     );
                   },
 
@@ -369,7 +372,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.deepPurple[300],
                     child: Column(
                       children: [
-                        Text('Átrios e salas de estudo do DEC',
+                        Text('Justiça e Paz',
                           style: GoogleFonts.bebasNeue(
                             color: Colors.white,
                             fontSize: 24,
@@ -378,7 +381,7 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('Horário: 08h00 às 20h',
+                        Text('Horário: 08h30 às 19h',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -403,50 +406,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => BibliotecaMunicipalCoimbra()),
-                    );
-                  },
-
-                  child: Container(
-                    height: 80,
-                    color: Colors.deepPurple[300],
-                    child: Column(
-                      children: [
-                        Text('Sala 24h (DEC)',
-                          style: GoogleFonts.bebasNeue(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-
-
-                        Text('Horário: 24h',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => BibliotecaMunicipalCoimbra()),
+                      MaterialPageRoute(builder: (context) => BibliotecaDEM()),
                     );
                   },
 
@@ -464,51 +424,7 @@ class _HomePageState extends State<HomePage> {
                         ),
 
 
-                        Text('Horário: 08h30 às 20h00',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-
-
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => BibliotecaMunicipalCoimbra()),
-                    );
-                  },
-
-                  child: Container(
-                    height: 80,
-                    color: Colors.deepPurple[300],
-                    child: Column(
-                      children: [
-                        Text('Biblioteca do DCV',
-                          style: GoogleFonts.bebasNeue(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-
-
-                        Text('Horário: 09h00 às 17h30',
+                        Text('Horário: 09h às 22h',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
