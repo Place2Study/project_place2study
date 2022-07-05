@@ -45,7 +45,7 @@ class _BibliotecaMunicipalCoimbraState extends State<BibliotecaMunicipalCoimbra>
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fae81b8fb-760e-46ae-a500-bf8c964df17e%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220625%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220625T121920Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D2751a290f7d3c40a028297d340923945235eff14f1cb31b9b9586489e28d7167&sign=MzrqJxo4dDtII8mtfuKdFPbZqLxHAQiQHKbXrQWwfB4',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F26309c95-d6b0-4fe8-b2a8-2bf3d048af2b%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220705%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220705T122012Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Df6a7ff83363e850307463e9557b64aef78798720377ef1bd00ed1c079bb967e9&sign=gxhEcfiHbz3UKqXe5cvRKGeApuUrG4jMHT_MkkJJAu4',
                 fit: BoxFit.cover,
               ),
               title: Text('Biblioteca Municipal de Coimbra'),
