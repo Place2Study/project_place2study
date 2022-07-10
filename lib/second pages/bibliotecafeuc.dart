@@ -46,7 +46,7 @@ class _BibliotecaFEUCState extends State<BibliotecaFEUC> {
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F12f4eb57-13a5-4682-8288-b99e9cac8bc0%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220705%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220705T122126Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D46bfc9ea96e40a925c651a08f9269e747cc1321176ccedec9468fe36623c7a26&sign=j0CHmSYlxA0ltbPUSe_1vZjeabPQ4eTItiI5ZWi92E8',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F19ca950b-b4c1-4417-93bf-ce696f0ba3d6%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220710%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220710T170927Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dc4ae6d4974f9cb1355d32bdc07ef699a2ea706f71e76d1b3cc975c21324c77b0&sign=LQXIdOVuXpUPwjv9l_SCDB1sysx0hZOezptOMH0in_I',
                 fit: BoxFit.cover,
               ),
               title: Text('Biblioteca FEUC'),

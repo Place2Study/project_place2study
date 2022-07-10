@@ -46,7 +46,7 @@ class _BibliotecaUCState extends State<BibliotecaUC> {
             floating: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F7d70004d-827f-4f19-80a0-81bd030ca6d7%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220705%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220705T122151Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D2f5637a5a31a6677e4b89d7a891a63e88c4795a9248bff435e854e0e7f9ac36f&sign=OIwi2ArljFF3rhotLP3Q7nwICKjLtCQyTaYDpFtXhn4',
+                'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F06953df1-6394-409b-b961-fa62ae6396ce%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220710%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220710T170956Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Ddfbd4252d3660cdfbb75e348ce8610a97911b424330793fa47ed573781412d9b&sign=HcDhZFFhlhfIpzW4WNy2QjN50ZQGBPXU8ElJ443Iw3U',
                 fit: BoxFit.cover,
               ),
               title: Text('Biblioteca da UC'),

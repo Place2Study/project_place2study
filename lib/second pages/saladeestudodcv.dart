@@ -46,7 +46,7 @@ class _SaladeEstudoDCVState extends State<SaladeEstudoDCV> {
               floating: true,
               flexibleSpace: FlexibleSpaceBar(
                 background: Image.network(
-                  'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F696b1d2d-3a4b-4c88-adac-84b5dcca5094%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220705%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220705T122047Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3De2fddce9969c57435b0e4ac529385742770bca456225aa60eb9a1fce9b983efc&sign=kxvhnPfPTJAgclgWXAQsnpddJhJiWTjBsccHn4KkQKk',
+                  'https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fcb1e542e-6624-453e-a140-6a0a8919e112%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6KECABEK%252F20220710%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220710T170858Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D12e8385035193664e5bb1e19764a5bf5a87ed05dcdc351eb550a28bef371af97&sign=dtvCgV-eIoRMBpNzEqpEi0MxAJ-pAxtKBAjhxU6diC8',
                   fit: BoxFit.cover,
                 ),
                 title: Text('Sala de Estudo DCV'),
